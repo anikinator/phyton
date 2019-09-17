@@ -56,7 +56,9 @@ def my_read_file(file_name_to_read):
     file_name_to_read = open(file_name_to_read, 'r')
     return  file_name_to_read.read().split()
 
-my_dict = {}
+#global my_dict
+my_dict = dict()
+
 
 # my_dict = dict(my_read_file("story.txt"))
 # print(type(my_dict))
@@ -68,4 +70,17 @@ def word_stat(word_from_list):
         my_dict[word_from_list] = 1
     return my_dict
 
-print(list(map(word_stat, my_read_file("story.txt"))))
+def test(x):
+    #return x.upper()
+#    global my_dict
+    if x not in my_dict:
+        my_dict[x] = 1
+    else:
+        my_dict[x] += 1
+    print(my_dict)
+    return my_dict
+
+#print(list(map(word_stat, my_read_file("story.txt"))))
+
+#print(list(map(test, my_read_file("story.txt"))))
+t = list(map(test, my_read_file("story.txt")))
