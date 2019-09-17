@@ -56,19 +56,12 @@ def my_read_file(file_name_to_read):
     file_name_to_read = open(file_name_to_read, 'r')
     return  file_name_to_read.read().split()
 
-#global my_dict
+global my_dict
 my_dict = dict()
 
 
 # my_dict = dict(my_read_file("story.txt"))
 # print(type(my_dict))
-
-def word_stat(word_from_list):
-    if word_from_list in my_dict:
-        my_dict[word_from_list] += 1
-    else:
-        my_dict[word_from_list] = 1
-    return my_dict
 
 def test(x):
     #return x.upper()
