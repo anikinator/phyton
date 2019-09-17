@@ -61,11 +61,11 @@ my_dict = dict()
 
 
 # my_dict = dict(my_read_file("story.txt"))
-# print(type(my_dict))
+# print(type(my_dict))git
 
 def test(x):
-    #return x.upper()
-#    global my_dict
+    # return x.upper()
+# global my_dict
     if x not in my_dict:
         my_dict[x] = 1
     else:
@@ -73,7 +73,7 @@ def test(x):
     print(my_dict)
     return my_dict
 
-#print(list(map(word_stat, my_read_file("story.txt"))))
+# print(list(map(word_stat, my_read_file("story.txt"))))
 
-#print(list(map(test, my_read_file("story.txt"))))
+# print(list(map(test, my_read_file("story.txt"))))
 t = list(map(test, my_read_file("story.txt")))
