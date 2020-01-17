@@ -23,16 +23,6 @@ print(list(map(makelower,list_of_strings)))
 def my_personal_square(my_number):
     return my_number ** 2
 
-print(my_personal_square(11))
-
-list_of_simple = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-print(list(map(my_personal_square,[i for i in range(1,101) if i % 2 !=0 ])))
-
-print("="*50)
-
-# Simple Numbers and Squars of it
-def simple_numbers(x):
 
     list_of_simples = [] # list of simple
 
